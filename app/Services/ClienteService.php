@@ -24,14 +24,29 @@ class ClienteService
 
         $validation->setRules(
             [
-                'nome' => 'required',
+                'nome' => 'required|min_length[3]',
+                'cpf' => 'required|numeric|exact_length[11]',
                 'estado_id' => 'required|integer',
                 'municipio_id' => 'required|integer'
             ],
             [
-                'nome' => 'O campo nome é obrigatório.',
-                'estado_id' => 'O campo estado_id é obrigatório e deve ser um número inteiro.',
-                'municipio_id' => 'O campo municipio_id é obrigatório e deve ser um número inteiro.'
+                'nome' => [
+                    'required' => 'O campo Nome é obrigatório.', 
+                    'min_length' => 'O campo Nome deve ter pelo menos 3 caracteres.'
+                ],
+                'cpf' => [
+                    'required' => 'O campo CPF é obrigatório.',
+                    'numeric' => 'O campo CPF deve conter apenas números.',
+                    'exact_length' => 'O campo CPF deve conter exatamente 11 dígitos.'
+                ],
+                'estado_id' => [
+                    'required' => 'O campo Estado é obrigatório.',
+                    'integer' => 'O campo Estado deve ser um número inteiro.'
+                ],
+                'municipio_id' => [
+                    'required' => 'O campo Município é obrigatório.',
+                    'integer' => 'O campo Município deve ser um número inteiro.'
+                ]
             ]
         );
 
@@ -171,7 +186,8 @@ class ClienteService
         } catch (\InvalidArgumentException $e) {
             return [
                 'status' => 'error',
-                'message' => 'Erro de validação: ' . $e->getMessage()
+                'message' => 'Erro de validação. Verifique os campos.',
+                'errors' => json_decode($e->getMessage(), true)
             ];
         } catch (\Exception $e) {
             return [

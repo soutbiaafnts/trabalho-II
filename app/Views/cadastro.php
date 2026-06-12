@@ -6,36 +6,59 @@
         
         <form action="<?= base_url('store')?>" method="post">
 
+            <?php $errors = session('validationErrors') ?? []; ?>
+            
             <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
-                <input type="text" value="<?= isset($user) ? $user['nome'] : '' ?>" name="nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <span class="input-group-text">Nome</span>
+                <input type="text" value="<?= old('nome') ?>" name="nome"
+                    class="form-control <?= isset($errors['nome']) ? 'is-invalid' : '' ?>">
+                <?php if (isset($errors['nome'])): ?>
+                    <div class="invalid-feedback"><?= $errors['nome'] ?></div>
+                <?php endif; ?>
             </div>
             
             <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
-                <input type="text" value="<?= isset($user) ? $user['cpf'] : '' ?>" name="cpf" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <span class="input-group-text">CPF</span>
+                <input type="text" value="<?= old('cpf') ?>" name="cpf"
+                    class="form-control <?= isset($errors['cpf']) ? 'is-invalid' : '' ?>">
+                <?php if (isset($errors['cpf'])): ?>
+                    <div class="invalid-feedback">
+                        <?= $errors['cpf'] ?>
+                    </div>
+                <?php endif; ?>
             </div>
-
+            
             <div class="input-group mb-3">
                 <label class="input-group-text" for="estado">Estado</label>
-                <select name="estado_id" class="form-select" id="estado">
-                    <option selected>Selecione um estado</option>
-
+                <select name="estado_id" id="estado" class="form-select <?= isset($errors['estado_id']) ? 'is-invalid' : '' ?>">
+                    <option value="" selected disabled>Selecione um estado</option>
                     <?php foreach ($estados as $estado): ?>
-                        <option value="<?= $estado['id'] ?>">
+                        <option value="<?= $estado['id'] ?>" <?= old('estado_id') == $estado['id'] ? 'selected' : '' ?>>
                             <?= $estado['nome'] ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
+                <?php if (isset($errors['estado_id'])): ?>
+                    <div class="invalid-feedback"><?= $errors['estado_id'] ?></div>
+                <?php endif; ?>
             </div>
 
             <div class="input-group mb-3">
-                <label class="input-group-text" for="municipio">Município</label>
-                <select name="municipio_id" class="form-select" id="municipio">
-                    <option selected>Selecione um município</option>
-                    <!-- populado dinamicamente -->
+                <label class="input-group-text" for="estado">Município</label>
+                <select name="municipio_id" id="municipio" class="form-select <?= isset($errors['municipio_id']) ? 'is-invalid' : '' ?>">
+                    <option value="" selected disabled>Selecione um município</option>
+                    <?php foreach ($municipios as $municipio): ?>
+                        <option value="<?= $municipio['id'] ?>" <?= old('municipio_id') == $municipio['id'] ? 'selected' : '' ?>>
+                            <?= $municipio['nome'] ?>
+                        </option>
+                    <?php endforeach; ?>
                 </select>
+                <?php if (isset($errors['municipio_id'])): ?>
+                    <div class="invalid-feedback"><?= $errors['municipio_id'] ?></div>
+                <?php endif; ?>
             </div>
+            
+            
 
             <?= csrf_field() ?>
 
@@ -53,8 +76,9 @@
     
     
     <script>
-        //Cria uma constante chamada BASE_URL
         const BASE_URL = '<?= base_url() ?>';
+        const OLD_MUNICIPIO_ID = '<?= old('municipio_id') ?>';
+        const OLD_ESTADO_ID = '<?= old('estado_id') ?>';
     </script>
     
     

@@ -5,7 +5,7 @@
     <h1 class="text-center">Lista de Clientes</h1>
 
     <div class="container text-center">
-        <form action="<?= base_url('cadastro')?>" method="get">
+        <form action="<?= base_url('cadastro') ?>" method="get">
             <button type="submit" class="btn btn-success ">Adicionar Cliente</button>
         </form>
 
@@ -58,18 +58,6 @@
                 <?= $pager->links() ?>
             </ul>
         </div>
-
-        <?php if (session()->getFlashdata('message')): ?>
-            <div class="alert alert-success">
-                <?= session()->getFlashdata('message') ?>
-            </div>
-        <?php endif; ?>
-
-        </tbody>
-        </table>
-
-
-
     </div>
 </div>
 </div>
