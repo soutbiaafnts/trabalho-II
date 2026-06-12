@@ -43,3 +43,219 @@ in APPPATH\Views\cliente\registro.php on line 25.
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+ERROR - 2026-06-12 01:34:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-06-12 01:34:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+INFO - 2026-06-12 01:37:40 --> CSRF token verified.
+INFO - 2026-06-12 02:02:46 --> CSRF token verified.
+CRITICAL - 2026-06-12 02:20:18 --> Error: Call to a member function getClientes() on null
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\Cliente.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:40:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 APPPATH\Views\clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:40:35 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 APPPATH\Views\clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:40:36 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 APPPATH\Views\clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:41:00 --> Error: Cannot use object of type CodeIgniter\Pager\Pager as array
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:41:01 --> Error: Cannot use object of type CodeIgniter\Pager\Pager as array
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:41:01 --> Error: Cannot use object of type CodeIgniter\Pager\Pager as array
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:42:39 --> ErrorException: Undefined array key 0
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 APPPATH\Views\clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:42:41 --> ErrorException: Undefined array key 0
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 23.
+ 1 APPPATH\Views\clientes.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:44:01 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 31.
+ 1 APPPATH\Views\clientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 02:44:29 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 31.
+ 1 APPPATH\Views\clientes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
