@@ -23,7 +23,7 @@ class ClienteService
 
             $clientes = $this->clienteModel->paginate(5);
             $pager = $this->clienteModel->pager;
-           
+
 
         } catch (\Exception $e) {
             return [
@@ -40,7 +40,7 @@ class ClienteService
 
     }
 
-     public function deleteCliente($id)
+    public function deleteCliente($id)
     {
         try {
             if (!$this->clienteModel->find($id)) {
@@ -61,6 +61,23 @@ class ClienteService
                 'message' => 'Erro ao excluir o cliente: ' . $e->getMessage()
             ];
         }
-        }
-        
     }
+
+    public function createCliente($data)
+    {
+        try {
+            $this->clienteModel->insert($data);
+            return [
+                'status' => 'success',
+                'message' => 'Cliente criado com sucesso.'
+            ]; // Cliente criado com sucesso
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao criar o cliente: ' . $e->getMessage()
+            ];
+        }
+    }
+}
+
+

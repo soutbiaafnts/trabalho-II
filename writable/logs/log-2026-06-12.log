@@ -433,11 +433,932 @@ DEBUG - 2026-06-12 04:48:33 --> Session: Class initialized using 'CodeIgniter\Se
 INFO - 2026-06-12 04:48:37 --> CSRF token verified.
 DEBUG - 2026-06-12 04:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-12 04:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 04:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 04:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2026-06-12 04:57:28 --> CSRF token verified.
-DEBUG - 2026-06-12 04:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 04:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 05:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 05:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2026-06-12 05:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 04:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 04:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 04:54:45 --> CSRF token verified.
+DEBUG - 2026-06-12 04:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 04:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 05:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 05:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 05:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 05:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 05:06:31 --> CSRF token verified.
+INFO - 2026-06-12 05:11:57 --> CSRF token verified.
+CRITICAL - 2026-06-12 05:11:58 --> Error: Call to undefined method App\Services\ClienteService::createCliente()
+[Method: POST, Route: cadastro]
+in APPPATH\Controllers\Cadastro.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:12:12 --> CSRF token verified.
+CRITICAL - 2026-06-12 05:12:18 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cadastro]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cadastro', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 05:12:21 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cadastro]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cadastro', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:12:28 --> CSRF token verified.
+INFO - 2026-06-12 05:19:16 --> CSRF token verified.
+CRITICAL - 2026-06-12 05:19:16 --> Error: Class "App\Controllers\EstadoModel" not found
+[Method: POST, Route: cadastro]
+in APPPATH\Controllers\Cadastro.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:20:12 --> CSRF token verified.
+CRITICAL - 2026-06-12 05:20:12 --> Error: Class "App\Controllers\EstadoModel" not found
+[Method: POST, Route: cadastro]
+in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:20:41 --> CSRF token verified.
+CRITICAL - 2026-06-12 05:20:41 --> Error: Class "App\Controllers\EstadoModel" not found
+[Method: POST, Route: cadastro]
+in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:21:32 --> CSRF token verified.
+WARNING - 2026-06-12 05:21:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:22:50 --> CSRF token verified.
+WARNING - 2026-06-12 05:22:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:22:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:23:02 --> CSRF token verified.
+WARNING - 2026-06-12 05:23:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:23:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:23:28 --> CSRF token verified.
+WARNING - 2026-06-12 05:23:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:23:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 05:35:48 --> CSRF token verified.
+WARNING - 2026-06-12 05:35:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:35:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 05:35:48 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: cadastro]
+in APPPATH\Controllers\Cadastro.php on line 25.
+ 1 APPPATH\Controllers\Cadastro.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Controllers\\Cadastro.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:37:05 --> CSRF token verified.
+WARNING - 2026-06-12 05:37:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:37:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-12 05:37:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(30): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 05:38:12 --> CSRF token verified.
+WARNING - 2026-06-12 05:38:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:38:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-12 05:38:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(30): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 05:38:52 --> CSRF token verified.
+WARNING - 2026-06-12 05:38:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:38:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2026-06-12 05:42:47 --> CSRF token verified.
+WARNING - 2026-06-12 05:42:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:42:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 05:43:06 --> CSRF token verified.
+WARNING - 2026-06-12 05:43:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:43:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-06-12 05:43:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(30): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 05:45:20 --> CSRF token verified.
+WARNING - 2026-06-12 05:45:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$EstadoModel is deprecated in APPPATH\Controllers\Cadastro.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:45:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cadastro::$MunicipioModel is deprecated in APPPATH\Controllers\Cadastro.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 05:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-12 05:48:36 --> ParseError: syntax error, unexpected token "if"
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\Cliente.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Controllers\\Cliente.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cliente')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cliente')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Cliente', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 05:52:03 --> Error: Class "App\Controllers\EstadoModel" not found
+[Method: GET, Route: clientes]
+in APPPATH\Controllers\Cliente.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:52:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:52:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 05:52:18 --> ErrorException: Array to string conversion
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 33.
+ 1 APPPATH\Views\clientes.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php', 33)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\2026\\trabalho-II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\Cliente.php(33): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:54:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:55:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:55:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:55:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:55:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:56:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:56:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:58:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:58:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:58:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:58:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:58:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:58:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:58:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:58:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:59:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:59:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:59:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:59:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 05:59:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 05:59:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 05:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:01:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:01:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:01:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:01:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:01:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:01:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:01:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:01:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:02:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:02:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:04:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:04:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:04:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 06:04:59 --> CSRF token verified.
+ERROR - 2026-06-12 06:04:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+WARNING - 2026-06-12 06:07:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:07:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 06:09:12 --> CSRF token verified.
+ERROR - 2026-06-12 06:09:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+INFO - 2026-06-12 06:09:15 --> CSRF token verified.
+ERROR - 2026-06-12 06:09:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2026-06-12 06:09:18 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: cadastro]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('cadastro', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:09:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:09:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:09:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:09:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:09:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:09:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:09:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:09:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:16:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:16:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:16:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:18:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:18:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:19:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:19:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:19:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:19:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:19:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:19:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:23:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:23:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:23:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:23:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 06:24:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-06-12 06:24:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-06-12 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

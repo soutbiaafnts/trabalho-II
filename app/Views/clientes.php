@@ -10,11 +10,9 @@
 <div class="container w-75 mt-5 align-center">
     <h1 class="text-center">Lista de Clientes</h1>
 
-            <div class="d-flex justify-content-center">
-                <?= $pager->links('default', 'default_full') ?>
-            </div>
+    <div class="container text-center">
+        <button a class="btn btn-success"><a href="<?= base_url('') ?>" class="btn btn-success">Adicionar Cliente</a></button>
 
-        </div>
     </div>
 
     <hr>
@@ -51,7 +49,10 @@
                         </td>
 
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <form action="/cliente/edit/<?= $cliente['id'] ?>" method="get">
+                                <?= csrf_field() ?>
+                                <button class="btn btn-primary">Editar</button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>

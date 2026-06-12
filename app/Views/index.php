@@ -3,17 +3,17 @@
 
     <div class="container w-25 mt-5">
         <h1 class="text-center">Cadastro de Cliente</h1>
-
+        
         <form action="<?= base_url('/cadastro')?>" method="post">
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
-                <input type="text" name="nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" value="<?= isset($user) ? $user['nome'] : '' ?>" name="nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
             
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
-                <input type="text" name="cpf" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" value="<?= isset($user) ? $user['cpf'] : '' ?>" name="cpf" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <div class="input-group mb-3">
@@ -22,7 +22,7 @@
                     <option selected>Selecione um estado</option>
 
                     <?php foreach ($estados as $estado): ?>
-                        <option value="<?= $estado['id'] ?>">
+                        <option value="<?= $estado['id'] ?>" <?= isset($user) && $user['estado_id'] == $estado['id'] ? 'selected' : '' ?>>
                             <?= $estado['nome'] ?>
                         </option>
                     <?php endforeach; ?>
@@ -41,7 +41,7 @@
 
             <div class="container text-center">
                 <button class="btn btn-primary">Cadastrar</button>
-                <button class="btn btn-danger">Voltar</button>
+                <button class="btn btn-danger"><a href="<?= base_url('clientes') ?>">Voltar</a></button>
             </div>
 
         </form>
