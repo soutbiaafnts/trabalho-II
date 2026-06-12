@@ -10,5 +10,6 @@ $routes->get('/', 'Home::index');
 $routes->get('/municipios/estado/(:num)', 'Municipios::getByEstado/$1');
 $routes->post('/cadastro', 'Cadastro::cadastro');
 
-// CRUD Clientes
+// Rota para exibir a lista de clientes
 $routes->get('/clientes', 'Cliente::index');
+

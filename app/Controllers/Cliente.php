@@ -2,13 +2,27 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
-
 class Cliente extends BaseController
 {
-    public function index()
+
+    public function index(): string
     {
-        return view('clientes/lista');
+        $clienteService = service('cliente');
+
+        $r = $clienteService->getClientes();
+
+
+        if ($r['status'] === 'error') {
+            return $r['message'];
+        }
+
+        $clientes = $r['data'];
+
+
+
+        return view('clientes', [
+            'clientes' => $clientes,
+            'pager' => $r['pager']
+        ]);
     }
 }
