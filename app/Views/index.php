@@ -1,67 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estados e Municípios</title>
+<?= $this -> extend('layouts/default') ?>
+<?= $this -> section('content') ?>
 
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
-</head>
-<body>
-
-    <div class="container">
-        <h1>Cadastro</h1>
+    <div class="container w-25 mt-5">
+        <h1 class="text-center">Cadastro de Cliente</h1>
 
         <form action="<?= base_url('/cadastro')?>" method="post">
 
-            <div class="campo">
-                <label for="estado">Estado</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+                <input type="text" name="nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
+                <input type="text" name="cpf" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
 
-                <select name="estado" id="estado">
-                    <option value="">Selecione um estado</option>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="estado">Estado</label>
+                <select name="estado" class="form-select" id="estado">
+                    <option selected>Selecione um estado</option>
 
                     <?php foreach ($estados as $estado): ?>
-
                         <option value="<?= $estado['id'] ?>">
                             <?= $estado['nome'] ?>
                         </option>
-
                     <?php endforeach; ?>
-
                 </select>
             </div>
 
-            <div class="campo">
-                <label for="municipio">Município</label>
-
-                <select name="municipio" id="municipio">
-                    <option value="">Selecione um município</option>
-
-                    <!--
-                        As cidades devem ser carregadas
-                        assincronamente após a seleção do estado.
-                    -->
-
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="municipio">Município</label>
+                <select name="municipio" class="form-select" id="municipio">
+                    <option selected>Selecione um município</option>
 
                 </select>
             </div>
 
             <?= csrf_field() ?>
 
-            <button type="submit">
-                Enviar
-            </button>
+            <div class="container text-center">
+                <button class="btn btn-primary">Cadastrar</button>
+                <button class="btn btn-danger">Voltar</button>
+            </div>
 
         </form>
     </div>
+    
+    
+    <script>
+        //Cria uma constante chamada BASE_URL
+        const BASE_URL = '<?= base_url() ?>';
+    </script>
+    
+    
+    <script src="<?= base_url('js/script.js') ?>" defer></script>
 
-</body>
-</html>
-
-<script>
-    //Cria uma constante chamada BASE_URL
-    const BASE_URL = '<?= base_url() ?>';
-</script>
-
-
-<script src="<?= base_url('js/script.js') ?>" defer></script>
+<?= $this -> endSection() ?>
