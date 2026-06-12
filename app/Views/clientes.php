@@ -1,17 +1,13 @@
 <?= $this->extend('layouts/default') ?>
 <?= $this->section('content') ?>
 
-
-        <div class="container text-center mb-">
-            <button class="btn btn-success mb-3">Adicionar Cliente</button>
-        </div>
-        
-
 <div class="container w-75 mt-5 align-center">
     <h1 class="text-center">Lista de Clientes</h1>
 
     <div class="container text-center">
-        <button a class="btn btn-success"><a href="<?= base_url('') ?>" class="btn btn-success">Adicionar Cliente</a></button>
+        <form action="<?= base_url('cadastro')?>" method="get">
+            <button type="submit" class="btn btn-success ">Adicionar Cliente</button>
+        </form>
 
     </div>
 
@@ -35,9 +31,9 @@
                         <th scope="row"><?= $cliente['id'] ?></th>
                         <td><?= $cliente['nome'] ?></td>
                         <td><?= $cliente['cpf'] ?></td>
-                        <td><?= $cliente['estado_id'] ?></td>
-                        <td><?= $cliente['municipio_id'] ?></td>
-                        <td>
+                        <td><?= $cliente['estado'] ?></td>
+                        <td><?= $cliente['municipio'] ?></td>
+                        <td class="d-flex justify-content-center gap-2">
                             <form action="/cliente/delete/<?= $cliente['id'] ?>" method="post">
                                 <?= csrf_field() ?>
 
@@ -46,9 +42,7 @@
                                     Delete
                                 </button>
                             </form>
-                        </td>
 
-                        <td>
                             <form action="/cliente/edit/<?= $cliente['id'] ?>" method="get">
                                 <?= csrf_field() ?>
                                 <button class="btn btn-primary">Editar</button>

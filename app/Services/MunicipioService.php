@@ -14,11 +14,6 @@ class MunicipioService
 
     public function getMunicipiosByEstado($estadoId)
     {
-        /*
-            Retorna a lista de municípios de um estado específico.
-            gerando o SQL: SELECT id, nome FROM municipios WHERE estado_id = $estadoId
-        */
-
         try {
 
             $municipios = $this->municipioModel->select('id, nome')->where('estado_id', $estadoId)->findAll();
@@ -26,7 +21,7 @@ class MunicipioService
         } catch (\Exception $e) {
             return [
                 'status' => 'error',
-                'message' => 'Erro ao selecionar os campos: ' . $e->getMessage()
+                'message' => 'Erro ao buscar municípios: ' . $e->getMessage()
             ];
         }
 
@@ -37,11 +32,34 @@ class MunicipioService
             ];
         }
 
-        $r = [
+        return [
             'status' => 'success',
             'data' => $municipios
         ];
+    }
 
-        return $r;
+    public function getMunicipioById($id)
+    {
+        try {
+            $municipio = $this->municipioModel->find($id);
+
+            if (!$municipio) {
+                return [
+                    'status' => 'error',
+                    'message' => 'Município não encontrado.'
+                ];
+            }
+
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao selecionar o município: ' . $e->getMessage()
+            ];
+        }
+
+        return [
+            'status' => 'success',
+            'data' => $municipio
+        ];
     }
 }

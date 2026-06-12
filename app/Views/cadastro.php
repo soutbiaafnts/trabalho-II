@@ -4,7 +4,7 @@
     <div class="container w-25 mt-5">
         <h1 class="text-center">Cadastro de Cliente</h1>
         
-        <form action="<?= base_url('/cadastro')?>" method="post">
+        <form action="<?= base_url('store')?>" method="post">
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
@@ -18,11 +18,11 @@
 
             <div class="input-group mb-3">
                 <label class="input-group-text" for="estado">Estado</label>
-                <select name="estado" class="form-select" id="estado">
+                <select name="estado_id" class="form-select" id="estado">
                     <option selected>Selecione um estado</option>
 
                     <?php foreach ($estados as $estado): ?>
-                        <option value="<?= $estado['id'] ?>" <?= isset($user) && $user['estado_id'] == $estado['id'] ? 'selected' : '' ?>>
+                        <option value="<?= $estado['id'] ?>">
                             <?= $estado['nome'] ?>
                         </option>
                     <?php endforeach; ?>
@@ -31,9 +31,9 @@
 
             <div class="input-group mb-3">
                 <label class="input-group-text" for="municipio">Município</label>
-                <select name="municipio" class="form-select" id="municipio">
+                <select name="municipio_id" class="form-select" id="municipio">
                     <option selected>Selecione um município</option>
-
+                    <!-- populado dinamicamente -->
                 </select>
             </div>
 
@@ -41,9 +41,13 @@
 
             <div class="container text-center">
                 <button class="btn btn-primary">Cadastrar</button>
-                <button class="btn btn-danger"><a href="<?= base_url('clientes') ?>">Voltar</a></button>
-            </div>
 
+            </div>
+            
+        </form>
+
+        <form class="text-center mt-2" action="<?= base_url('list')?>" method="get">
+            <button type="submit" class="btn btn-danger ">Voltar</button>
         </form>
     </div>
     

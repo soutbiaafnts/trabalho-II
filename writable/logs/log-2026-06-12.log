@@ -1362,3 +1362,546 @@ WARNING - 2026-06-12 06:24:50 --> [DEPRECATED] Creation of dynamic property App\
  5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2026-06-12 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 11:59:00 --> CSRF token verified.
+ERROR - 2026-06-12 11:59:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON UPDATE CASCADE) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#16 {main}
+WARNING - 2026-06-12 11:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 11:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 11:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 11:59:52 --> CSRF token verified.
+DEBUG - 2026-06-12 11:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 11:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 11:59:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 11:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 11:59:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 11:59:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 11:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:00:01 --> CSRF token verified.
+DEBUG - 2026-06-12 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:00:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:00:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:00:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:00:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:00:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:00:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:00:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:00:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:00:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:00:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 12:01:07 --> CSRF token verified.
+ERROR - 2026-06-12 12:01:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`brasil`.`clientes`, CONSTRAINT `fk_clientes_estados` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON UPDATE CASCADE) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\ClienteService.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Cadastro.php(27): App\Services\ClienteService->createCliente(Array)
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Cadastro->cadastro()
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#16 {main}
+WARNING - 2026-06-12 12:09:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:09:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:09:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:09:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:50:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:50:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:52:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:52:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:52:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:52:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-12 12:52:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$EstadoModel is deprecated in APPPATH\Controllers\Cliente.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+WARNING - 2026-06-12 12:52:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Cliente::$MunicipioModel is deprecated in APPPATH\Controllers\Cliente.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 12:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-12 14:54:02 --> Error: Call to undefined method App\Services\ClienteService::getClientes()
+[Method: GET, Route: /]
+in APPPATH\Controllers\ClienteController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:10:07 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:12:19 --> ErrorException: Attempt to read property "id" on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 APPPATH\Views\clientes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on string', 'C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\clientes.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:13:10 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:15:06 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:15:08 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:20:23 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:20:24 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:21:28 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Views\clientes.php on line 29.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 15:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-12 15:30:46 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastro" cannot be found.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastro')
+ 2 APPPATH\Views\clientes.php(8): url_to('cadastro')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\clientes.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 6 APPPATH\Controllers\ClienteController.php(32): view('clientes', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->read()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 15:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-12 15:39:01 --> ErrorException: Undefined variable $estados
+[Method: GET, Route: cadastro]
+in APPPATH\Views\cadastro.php on line 24.
+ 1 APPPATH\Views\cadastro.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cadastro.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cadastro', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(18): view('cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 15:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 15:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-12 15:43:55 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: cadastro]
+in APPPATH\Views\cadastro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cadastro', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(27): view('cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:55:56 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: cadastro]
+in APPPATH\Views\cadastro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cadastro', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(27): view('cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 15:56:27 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: cadastro]
+in APPPATH\Views\cadastro.php on line 25.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cadastro', [], true)
+ 4 APPPATH\Controllers\ClienteController.php(27): view('cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+DEBUG - 2026-06-12 16:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:04:58 --> CSRF token verified.
+DEBUG - 2026-06-12 16:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:09:21 --> CSRF token verified.
+DEBUG - 2026-06-12 16:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:09:56 --> CSRF token verified.
+DEBUG - 2026-06-12 16:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:11:16 --> CSRF token verified.
+DEBUG - 2026-06-12 16:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:12:34 --> CSRF token verified.
+DEBUG - 2026-06-12 16:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-12 16:22:27 --> CSRF token verified.
+DEBUG - 2026-06-12 16:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-12 16:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

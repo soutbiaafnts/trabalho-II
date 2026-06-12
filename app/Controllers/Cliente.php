@@ -21,9 +21,6 @@ class Cliente extends BaseController
         $this->MunicipioModel = new MunicipioModel();
         $municipio = $this->MunicipioModel->find($r['data'][0]['municipio_id']);
 
-        $estado_nome = $estado['nome'];
-        $municipio_nome = $municipio['nome'];
-
         foreach ($r['data'] as $index => $cliente) {
             $estado = $this->EstadoModel->find($cliente['estado_id']);
             $municipio = $this->MunicipioModel->find($cliente['municipio_id']);
@@ -37,11 +34,8 @@ class Cliente extends BaseController
             return $r['message'];
         }
 
-        $clientes = $r['data'];
-
-
         return view('clientes', [
-            'clientes' => $clientes,
+            'clientes' => $r['data'],
             'pager' => $r['pager']
         ]);
     }

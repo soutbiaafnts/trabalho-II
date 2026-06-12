@@ -6,19 +6,13 @@ use App\Models\EstadoModel;
 
 class EstadoService
 {
-    protected $estadoModel;
+    protected EstadoModel $estadoModel;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->estadoModel = new EstadoModel();
     }
 
-    public function getEstados()
-    {
-        /*
-            Retorna a lista de estados.
-        */
-
+    public function getAllEstados() {
         try {
 
             $estados = $this->estadoModel->select('id, nome')->orderBy('nome')->findAll();
@@ -26,7 +20,7 @@ class EstadoService
         } catch (\Exception $e) {
             return [
                 'status' => 'error',
-                'message' => 'Erro ao selecionar os campos: ' . $e->getMessage()
+                'message' => 'Erro ao buscar estados: ' . $e->getMessage()
             ];
         }
 
@@ -34,7 +28,30 @@ class EstadoService
             'status' => 'success',
             'data' => $estados
         ];
-
     }
 
+    public function getEstadoById($id)
+    {
+        try {
+            $estado = $this->estadoModel->find($id);
+
+            if (!$estado) {
+                return [
+                    'status' => 'error',
+                    'message' => 'Estado não encontrado.'
+                ];
+            }
+
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao selecionar o estado: ' . $e->getMessage()
+            ];
+        }
+
+        return [
+            'status' => 'success',
+            'data' => $estado
+        ];
+    }
 }

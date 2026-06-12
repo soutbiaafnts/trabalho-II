@@ -5,12 +5,20 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
 
-$routes->get('/municipios/estado/(:num)', 'Municipios::getByEstado/$1');
-$routes->post('/cadastro', 'Cadastro::cadastro');
+$routes->get('cadastro', 'ClienteController::create', ['as' => 'cadastro']);
+$routes->post('store', 'ClienteController::store', ['as' => 'store']);
 
-// Rota para exibir a lista de clientes
-$routes->get('/clientes', 'Cliente::index');
+$routes->get('/', 'ClienteController::read', ['as' => 'clientes']);
+$routes->get('list', 'ClienteController::read', ['as' => 'list']);
+
+$routes->get('edit/(:num)', 'ClienteController::edit/$1', ['as' => 'edit']);
+$routes->put('edit/(:num)', 'ClienteController::update/$1', ['as' => 'update']);
+
+$routes->delete('delete/(:num)', 'ClienteController::delete/$1', ['as' => 'delete']);
+
+$routes->get('/municipios/estado/(:num)', 'Municipios::getByEstado/$1', );
+
+// crud cliente
 $routes->post('cliente/delete/(:num)', 'Cliente::delete/$1');
 
