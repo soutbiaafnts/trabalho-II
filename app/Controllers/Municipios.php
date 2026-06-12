@@ -7,13 +7,9 @@ use App\Services\MunicipioService;
 
 class Municipios extends BaseController
 {
-    public function getByEstado($estadoId)
-    {
-
+    public function getByEstado($estadoId) {
         
         if (!$this->request->isAJAX()) {
-            //throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
-            //Erro 403
             return $this->response->setStatusCode(403)->setBody( 'Acesso não autorizado' );
         }
     
