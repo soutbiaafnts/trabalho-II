@@ -7,7 +7,8 @@
     <h1 class="text-center">Lista de Clientes</h1>
 
     <div class="container text-center">
-        <button class="btn btn-success">Adicionar Cliente</button>
+        <button a class="btn btn-success"><a href="<?= base_url('') ?>" class="btn btn-success">Adicionar Cliente</a></button>
+
     </div>
 
     <hr>
@@ -44,7 +45,10 @@
                         </td>
 
                         <td>
-                            <button class="btn btn-primary">Editar</button>
+                            <form action="/cliente/edit/<?= $cliente['id'] ?>" method="get">
+                                <?= csrf_field() ?>
+                                <button class="btn btn-primary">Editar</button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>
