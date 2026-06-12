@@ -1,0 +1,410 @@
+ERROR - 2026-05-25 21:46:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2026-05-25 21:46:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estados`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-25 21:47:08 --> Error: Undefined constant "App\Controllers\cidades"
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-25 22:25:18 --> mysqli_sql_exception: Unknown column 'estado_id' in 'where clause' in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `n...', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(13): App\Services\MunicipioService->getMunicipiosByEstado(1)
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-05-25 23:12:25 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${BASE_URL}"
+[Method: GET, Route: $%7BBASE_URL%7D/municipios/estado/$%7BestadoId%7D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('${BASE_URL}/municipios/estado/${estadoId}')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('${BASE_URL}/municipios/estado/${estadoId}')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-25 23:12:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${BASE_URL}"
+[Method: GET, Route: $%7BBASE_URL%7D/municipios/estado/$%7BestadoId%7D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('${BASE_URL}/municipios/estado/${estadoId}')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('${BASE_URL}/municipios/estado/${estadoId}')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-25 23:16:38 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('31')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('31')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('31')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('31')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:16:51 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('25')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('25')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('25')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('25')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:01 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('32')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('32')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('32')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('32')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('53')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('53')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('53')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('53')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('15')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('15')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('15')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('15')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('13')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('13')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('13')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('13')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('21')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('21')
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\MunicipioService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Municipios.php(22): App\Services\MunicipioService->getMunicipiosByEstado('21')
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Municipios->getByEstado('21')
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:17:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-25 23:18:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-05-25 23:23:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "${BASE_URL}"
+[Method: GET, Route: $%7BBASE_URL%7D/municipios/estado/$%7BestadoId%7D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('${BASE_URL}/municipios/estado/${estadoId}')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('${BASE_URL}/municipios/estado/${estadoId}')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

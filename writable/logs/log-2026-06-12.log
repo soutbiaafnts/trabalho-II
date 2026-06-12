@@ -1,0 +1,45 @@
+CRITICAL - 2026-06-12 00:03:07 --> ErrorException: Undefined variable $estados
+[Method: GET, Route: clientes/registro]
+in APPPATH\Views\cliente\registro.php on line 25.
+ 1 APPPATH\Views\cliente\registro.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cliente/registro', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(12): view('cliente/registro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->registro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 00:04:49 --> ErrorException: Undefined variable $estados
+[Method: GET, Route: clientes/registro]
+in APPPATH\Views\cliente\registro.php on line 25.
+ 1 APPPATH\Views\cliente\registro.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cliente/registro', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(12): view('cliente/registro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->registro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+CRITICAL - 2026-06-12 00:04:49 --> ErrorException: Undefined variable $estados
+[Method: GET, Route: clientes/registro]
+in APPPATH\Views\cliente\registro.php on line 25.
+ 1 APPPATH\Views\cliente\registro.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\app\\Views\\cliente\\registro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('cliente/registro', [], true)
+ 5 APPPATH\Controllers\ClienteController.php(12): view('cliente/registro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->registro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')

@@ -1,0 +1,144 @@
+ERROR - 2026-06-11 23:54:51 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#14 {main}
+ERROR - 2026-06-11 23:54:55 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#14 {main}
+ERROR - 2026-06-11 23:55:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#14 {main}
+ERROR - 2026-06-11 23:55:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\biafo\Documents\repos-ifmg\Trabalho Prático II\system\rewrite.php(44): require_once('C:\\Users\\biafo\\...')
+#14 {main}

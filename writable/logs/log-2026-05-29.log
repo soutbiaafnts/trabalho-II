@@ -1,0 +1,68 @@
+ERROR - 2026-05-29 12:07:54 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-05-29 12:08:31 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\Users\ferna\Desktop\ajax-test\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Users\ferna\Desktop\ajax-test\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#3 D:\Users\ferna\Desktop\ajax-test\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Users\ferna\Desktop\ajax-test\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Users\ferna\Desktop\ajax-test\app\Services\EstadoService.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\Users\ferna\Desktop\ajax-test\app\Controllers\Home.php(11): App\Services\EstadoService->getEstados()
+#7 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\Users\ferna\Desktop\ajax-test\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\Users\ferna\Desktop\ajax-test\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Users\ferna\Desktop\ajax-test\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
