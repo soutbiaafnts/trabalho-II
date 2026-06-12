@@ -275,3 +275,112 @@ in APPPATH\Views\clientes.php on line 31.
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 >>>>>>> 19e0cdd8f650e0f5433ca8c37dfe55c50bdddada
+ERROR - 2026-06-12 03:25:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(1250): CodeIgniter\Model->countAllResults(false)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(24): CodeIgniter\BaseModel->paginate(5)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cliente.php(12): App\Services\ClienteService->getClientes()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cliente->index()
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(1250): CodeIgniter\Model->countAllResults(false)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(24): CodeIgniter\BaseModel->paginate(5)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cliente.php(12): App\Services\ClienteService->getClientes()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cliente->index()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-06-12 03:25:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(1250): CodeIgniter\Model->countAllResults(false)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(24): CodeIgniter\BaseModel->paginate(5)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cliente.php(12): App\Services\ClienteService->getClientes()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cliente->index()
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(1250): CodeIgniter\Model->countAllResults(false)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(24): CodeIgniter\BaseModel->paginate(5)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cliente.php(12): App\Services\ClienteService->getClientes()
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cliente->index()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-06-12 03:27:15 --> mysqli_sql_exception: Table 'clientes.clientes' doesn't exist in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\BaseModel.php(1250): CodeIgniter\Model->countAllResults(false)
+#6 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Services\ClienteService.php(24): CodeIgniter\BaseModel->paginate(5)
+#7 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\app\Controllers\Cliente.php(12): App\Services\ClienteService->getClientes()
+#8 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(933): App\Controllers\Cliente->index()
+#9 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-06-12 03:36:35 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 61.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-06-12 03:36:36 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 61.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('clientes', [], true)
+ 3 APPPATH\Controllers\Cliente.php(23): view('clientes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cliente->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
