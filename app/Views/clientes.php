@@ -2,8 +2,8 @@
 <?= $this->section('content') ?>
 
 
-    <div class="container w-75 mt-5 align-center">
-        <h1 class="text-center">Lista de Clientes</h1>
+<div class="container w-75 mt-5 align-center">
+    <h1 class="text-center">Lista de Clientes</h1>
 
     <div class="container text-center">
         <button class="btn btn-success">Adicionar Cliente</button>
@@ -33,17 +33,31 @@
                         <td><?= $cliente['municipio_id'] ?></td>
                         <td>
                             <button
-                                class="btn btn-primary"><?= anchor('cliente/edit/' . $cliente['id'], 'Editar', ['onclick' => "return confirm('Deseja realmente excluir este cliente?')"]) ?></button>
-                            <button
-                                class="btn btn-danger"><?= anchor('cliente/delete/' . $cliente['id'], 'Delete', ['onclick' => "return confirm('Deseja realmente excluir este cliente?')"]) ?></button>
+                                class="btn btn-primary "><?= anchor('cliente/edit/' . $cliente['id'], 'Editar', ['onclick' => "return confirm('Deseja realmente excluir este cliente?')"]) ?></button>
 
+                        </td>
+                        <td>
+                            <form action="/cliente/delete/<?= $cliente['id'] ?>" method="post">
+                                <?= csrf_field() ?>
+
+                                <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('Deseja realmente excluir este cliente?')">
+                                    Delete
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>
 
+                <?php if (session()->getFlashdata('message')): ?>
+                    <div class="alert alert-success">
+                        <?= session()->getFlashdata('message') ?>
+                    </div>
+                <?php endif; ?>
+
             </tbody>
         </table>
-        
+
         <div class="container d-flex justify-content-center">
             <ul class="pagination">
                 <?= $pager->links() ?>
@@ -51,7 +65,7 @@
         </div>
 
     </div>
-    >>>>>>> 29709f65124851608d8d1e289b2682217e4a32c9
+
 </div>
 
 </html>
