@@ -1,15 +1,15 @@
 <?= $this->extend('layouts/default') ?>
 <?= $this->section('content') ?>
 
-
-<div class="container w-75 mt-5 align-center">
+<div class="container w-75 mt-5">
     <h1 class="text-center">Lista de Clientes</h1>
+        
+        <hr>
 
-    <div class="container text-center">
-        <button class="btn btn-success">Adicionar Cliente</button>
-    </div>
-
-    <hr>
+        <div class="container text-center mb-3">
+            <button class="btn btn-success">Adicionar Cliente</button>
+        </div>
+        
 
     <div class="">
         <table class="table table-striped table-hover table-bordered table-light">
@@ -67,6 +67,8 @@
     </div>
 
 </div>
+        </div>
+    </div>
 
 </html>
 
