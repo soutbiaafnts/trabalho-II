@@ -3,14 +3,10 @@
 
     <div class="container w-75 mt-5">
         <h1 class="text-center">Lista de Clientes</h1>
-
-        <div class="container text-center">
-            <button class="btn btn-success">Adicionar Cliente</button>
-        </div>
-        
         <hr>
 
         <div class="">
+            
             <table class="table table-striped table-hover table-bordered table-light">
                 <thead>
                     <tr class="text-center">
@@ -23,22 +19,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($clientes as $cliente): ?>
-                        <tr class="align-middle text-center">
-                            <th scope="row"><?= $cliente['id'] ?></th>
-                            <td><?= $cliente['nome'] ?></td>
-                            <td><?= $cliente['cpf'] ?></td>
-                            <td><?= $cliente['estado_id'] ?></td>
-                            <td><?= $cliente['municipio_id'] ?></td>
-                            <td>
-                                <button class="btn btn-primary">Editar</button>
-                                <button class="btn btn-danger">Excluir</button>
-                            </td>
-                            <td><?= anchor('cliente/edit/' . $cliente['id'], 'Edit',[ 'onclick' => "return confirm('Deseja realmente excluir este cliente?')"]) ?></td>
-                    <td><?= anchor('cliente/delete/' . $cliente['id'], 'Delete', ['onclick' => "return confirm('Deseja realmente excluir este cliente?')"]) ?></td>
-
-                </tr>
-                    <?php endforeach; ?>
+                    <tr class="align-middle text-center">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>
+                            <button class="btn btn-primary">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
 
@@ -66,4 +57,4 @@
         </div>
     </div>
 
-</html>
+<?= $this -> endSection() ?>

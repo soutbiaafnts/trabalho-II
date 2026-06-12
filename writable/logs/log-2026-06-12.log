@@ -43,6 +43,21 @@ in APPPATH\Views\cliente\registro.php on line 25.
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+<<<<<<< HEAD
+CRITICAL - 2026-06-12 01:52:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "lista.php"
+[Method: GET, Route: clientes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lista.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('lista', [], true)
+ 3 APPPATH\Controllers\ClienteController.php(12): view('lista')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\biafo\\Documents\\repos-ifmg\\Trabalho Prático II\\public\\index.php')
+=======
 ERROR - 2026-06-12 01:34:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php:201
 Stack trace:
 #0 C:\Users\gabri\OneDrive\Documentos\Faculdade\2026\trabalho-II\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'brasil', 3306, '', 0)
@@ -259,3 +274,4 @@ in APPPATH\Views\clientes.php on line 31.
  9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+>>>>>>> 19e0cdd8f650e0f5433ca8c37dfe55c50bdddada
