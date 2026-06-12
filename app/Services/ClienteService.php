@@ -40,4 +40,27 @@ class ClienteService
 
     }
 
-}
+     public function deleteCliente($id)
+    {
+        try {
+            if (!$this->clienteModel->find($id)) {
+                return [
+                    'status' => 'error',
+                    'message' => 'Cliente não encontrado.'
+                ]; // Cliente não encontrado
+            } else {
+                $this->clienteModel->delete($id);
+                return [
+                    'status' => 'success',
+                    'message' => 'Cliente excluído com sucesso.'
+                ]; // Cliente excluído com sucesso
+            }
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao excluir o cliente: ' . $e->getMessage()
+            ];
+        }
+        }
+        
+    }
