@@ -13,6 +13,10 @@
 
     <?= $this->renderSection('content') ?>
 
+    <footer class="text-center d-flex flex-column align-items-center justify-content-center py-3">
+        <p>Desenvolvido por Bianca Fontes e Gabriel Santos</p>
+    </footer>
+
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100">
 
         <?php if (session()->getFlashdata('success')): ?>
