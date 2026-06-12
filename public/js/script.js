@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     const estadoSelect = document.getElementById('estado');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
             .then(response => response.json())
             .then(data => {
-                for (const municipio of data.data) { 
+                for (const municipio of data.data) {
                     const option = document.createElement('option');
                     option.value = municipio.id;
                     option.textContent = municipio.nome;
@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    estadoSelect.addEventListener('change', function() {
+    estadoSelect.addEventListener('change', function () {
 
         carregarMunicipios(this.value);
 
     });
 
-    if (OLD_ESTADO_ID) { 
+    if (OLD_ESTADO_ID) {
         carregarMunicipios(OLD_ESTADO_ID, OLD_MUNICIPIO_ID);
     }
 

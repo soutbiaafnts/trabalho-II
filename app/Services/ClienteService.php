@@ -197,7 +197,52 @@ class ClienteService
         }
     }
 
+    public function updateCliente(int $id, array $data) {
+        try {
+            $cliente = $this->clienteModel->find($id);
+
+            if (!$cliente) {
+                return [
+                    'status' => 'error',
+                    'message' => 'Cliente não encontrado.'
+                ];
+            }
+
+            $this->validateClienteData($data);
+            $this->clienteModel->update($id, $data);
+
+            return [
+                'status' => 'success',
+                'message' => 'Cliente atualizado com sucesso.'
+            ];
+        } catch (\InvalidArgumentException $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro de validação. Verifique os campos.',
+                'errors' => json_decode($e->getMessage(), true)
+            ];
+        } catch (\Exception $e) {
+            return [
+                'status' => 'error',
+                'message' => 'Erro ao atualizar o cliente: ' . $e->getMessage()
+            ];
+        }
+    }
+
+    public function deleteCliente(int $id) {
+        try {
+            $cliente = $this->clienteModel->find($id);
+
+            if (!$cliente) {
+                return ['status' => 'error', 'message' => 'Cliente não encontrado.'];
+            }
+
+            $this->clienteModel->delete($id);
+
+            return ['status' => 'success', 'message' => 'Cliente excluído com sucesso.'];
+        } catch (\Exception $e) {
+            return ['status' => 'error', 'message' => 'Erro ao excluir o cliente: ' . $e->getMessage()];
+        }
+    }
 
 }
-
-

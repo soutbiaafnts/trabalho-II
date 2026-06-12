@@ -10,8 +10,7 @@
             
             <div class="input-group mb-3">
                 <span class="input-group-text">Nome</span>
-                <input type="text" value="<?= old('nome') ?>" name="nome"
-                    class="form-control <?= isset($errors['nome']) ? 'is-invalid' : '' ?>">
+                <input type="text" value="<?= old('nome') ?>" name="nome" class="form-control <?= isset($errors['nome']) ? 'is-invalid' : '' ?>">
                 <?php if (isset($errors['nome'])): ?>
                     <div class="invalid-feedback"><?= $errors['nome'] ?></div>
                 <?php endif; ?>
@@ -19,8 +18,7 @@
             
             <div class="input-group mb-3">
                 <span class="input-group-text">CPF</span>
-                <input type="text" value="<?= old('cpf') ?>" name="cpf"
-                    class="form-control <?= isset($errors['cpf']) ? 'is-invalid' : '' ?>">
+                <input type="text" value="<?= old('cpf') ?>" name="cpf" class="form-control <?= isset($errors['cpf']) ? 'is-invalid' : '' ?>">
                 <?php if (isset($errors['cpf'])): ?>
                     <div class="invalid-feedback">
                         <?= $errors['cpf'] ?>

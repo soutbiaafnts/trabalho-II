@@ -34,19 +34,15 @@
                         <td><?= $cliente['estado'] ?></td>
                         <td><?= $cliente['municipio'] ?></td>
                         <td class="d-flex justify-content-center gap-2">
-                            <form action="/cliente/delete/<?= $cliente['id'] ?>" method="post">
-                                <?= csrf_field() ?>
+                            <button type="button" class="btn btn-danger btn-deletar" data-id="<?= $cliente['id'] ?>"
+                                data-nome="<?= esc($cliente['nome']) ?>" data-bs-toggle="modal"
+                                data-bs-target="#modalDeletar">
+                                Excluir
+                            </button>
 
-                                <button type="submit" class="btn btn-danger"
-                                    onclick="return confirm('Deseja realmente excluir este cliente?')">
-                                    Delete
-                                </button>
-                            </form>
-
-                            <form action="/cliente/edit/<?= $cliente['id'] ?>" method="get">
-                                <?= csrf_field() ?>
-                                <button class="btn btn-primary">Editar</button>
-                            </form>
+                            <a href="<?= base_url('editar/' . $cliente['id']) ?>" class="btn btn-primary">
+                                Editar
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -60,8 +56,41 @@
         </div>
     </div>
 </div>
-</div>
 
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalDeletar" tabindex="-1" aria-labelledby="modalDeletarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="modalDeletarLabel">Confirmar exclusão</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente excluir o cliente <strong id="modalNomeCliente"></strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form id="formDeletar" method="post">
+                    <?= csrf_field() ?>
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.btn-deletar').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const id = this.dataset.id;
+            const nome = this.dataset.nome;
+
+            document.getElementById('modalNomeCliente').textContent = nome;
+            document.getElementById('formDeletar').action = '<?= base_url('delete/') ?>' + id;
+        });
+    });
+</script>
 
 <?= $this->endSection() ?>
