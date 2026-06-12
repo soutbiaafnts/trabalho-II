@@ -6,8 +6,8 @@
         
         <hr>
 
-        <div class="container text-center mb-3">
-            <button class="btn btn-success">Adicionar Cliente</button>
+        <div class="container text-center mb-">
+            <button class="btn btn-success mb-3">Adicionar Cliente</button>
         </div>
         
 
@@ -40,10 +40,8 @@
                 </tbody>
             </table>
 
-            <div class="container d-flex justify-content-center">
-                <ul class="pagination">
-                    <?= $pager->links() ?>
-                </ul>
+            <div class="d-flex justify-content-center">
+                <?= $pager->links('default', 'default_full') ?>
             </div>
 
         </div>
