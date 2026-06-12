@@ -2,6 +2,10 @@
 <?= $this->section('content') ?>
 
 
+        <div class="container text-center mb-">
+            <button class="btn btn-success mb-3">Adicionar Cliente</button>
+        </div>
+        
 
 <div class="container w-75 mt-5 align-center">
     <h1 class="text-center">Lista de Clientes</h1>
