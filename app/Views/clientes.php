@@ -1,35 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this -> extend('layouts/default') ?>
+<?= $this -> section('content') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Users</title>
-</head>
+    <div class="container w-75 mt-5">
+        <h1 class="text-center">Lista de Clientes</h1>
 
-<body>
-    <div class="contai">
-        <table class="table">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>CPF</th>
-                <th>Estado ID</th>  
-                <th>Municipio ID</th>
-            </tr>
-            <?php foreach ($clientes as $cliente): ?>
-                <tr>
-                    <td><?= $cliente['id'] ?></td>
-                    <td><?= $cliente['nome'] ?></td>
-                    <td><?= $cliente['cpf'] ?></td>
-                    <td><?= $cliente['estado_id'] ?></td>  
-                    <td><?= $cliente['municipio_id'] ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
-        <?= $pager->links() ?>
+        <div class="container text-center">
+            <button class="btn btn-success">Adicionar Cliente</button>
+        </div>
+        
+        <hr>
+
+        <div class="">
+            <table class="table table-striped table-hover table-bordered table-light">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">#ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Município</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($clientes as $cliente): ?>
+                        <tr class="align-middle text-center">
+                            <th scope="row"><?= $cliente['id'] ?></th>
+                            <td><?= $cliente['nome'] ?></td>
+                            <td><?= $cliente['cpf'] ?></td>
+                            <td><?= $cliente['estado_id'] ?></td>
+                            <td><?= $cliente['municipio_id'] ?></td>
+                            <td>
+                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-danger">Excluir</button>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            <div class="container d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#">Anterior</a>
+                    </li>
+                    
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    
+                    <li class="page-item">
+                        <a class="page-link" href="#">Próxima</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
     </div>
-</body>
 
-</html>
+<?= $this -> endSection() ?>
